@@ -120,6 +120,10 @@ h1 {
   gap: 16px;
 }
 
+.value-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   min-height: 178px;
   padding: 22px;
@@ -135,8 +139,7 @@ h1 {
 
 .card p,
 .profile p,
-.contact p,
-.method-item p {
+.contact p {
   margin: 0;
   color: #56616d;
   line-height: 1.7;
@@ -145,34 +148,6 @@ h1 {
 .card p + p,
 .contact p + p {
   margin-top: 8px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.4fr);
-  gap: 28px;
-  align-items: start;
-  border-top: 1px solid rgba(24, 33, 47, 0.12);
-}
-
-.method-list {
-  display: grid;
-  gap: 14px;
-}
-
-.method-item {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
-  padding: 18px 0;
-  border-bottom: 1px solid rgba(24, 33, 47, 0.12);
-}
-
-.method-item span {
-  color: #22695b;
-  font-size: 14px;
-  font-weight: 800;
 }
 
 .profile {
@@ -213,12 +188,10 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .split,
   .contact {
     display: block;
   }
 
-  .method-list,
   .contact-box {
     margin-top: 22px;
   }
