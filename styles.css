@@ -1,6 +1,6 @@
 :root {
-  color: #18212f;
-  background: #f6f4ef;
+  color: #17202a;
+  background: #f7f7f4;
   font-family:
     "Microsoft YaHei",
     "PingFang SC",
@@ -17,9 +17,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(135deg, rgba(30, 94, 84, 0.12), transparent 36%),
-    linear-gradient(315deg, rgba(184, 83, 52, 0.14), transparent 34%),
-    #f6f4ef;
+    linear-gradient(135deg, rgba(34, 105, 91, 0.12), transparent 34%),
+    linear-gradient(315deg, rgba(170, 83, 54, 0.1), transparent 32%),
+    #f7f7f4;
 }
 
 a {
@@ -27,40 +27,40 @@ a {
 }
 
 .page {
-  width: min(1080px, calc(100% - 40px));
+  width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 56px 0;
+  padding: 48px 0 64px;
 }
 
 .hero {
-  min-height: 56vh;
+  min-height: 62vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px 0 64px;
+  padding: 56px 0 72px;
 }
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #2a7569;
+  color: #22695b;
   font-size: 15px;
   font-weight: 700;
 }
 
 h1 {
-  max-width: 780px;
+  max-width: 920px;
   margin: 0;
-  font-size: clamp(42px, 8vw, 86px);
-  line-height: 1.02;
+  font-size: clamp(36px, 6.4vw, 76px);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .intro {
-  max-width: 720px;
+  max-width: 780px;
   margin: 24px 0 0;
-  color: #4d5663;
+  color: #4f5a64;
   font-size: 20px;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .actions {
@@ -83,21 +83,34 @@ h1 {
 
 .primary {
   color: #fff;
-  background: #1e5e54;
+  background: #22695b;
 }
 
 .secondary {
-  color: #1e5e54;
-  border: 1px solid rgba(30, 94, 84, 0.34);
+  color: #22695b;
+  border: 1px solid rgba(34, 105, 91, 0.34);
   background: rgba(255, 255, 255, 0.48);
 }
 
 .section {
-  padding: 40px 0;
+  padding: 44px 0;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin: 0 0 8px;
+  color: #a05236;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .section h2 {
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 28px;
 }
 
@@ -108,7 +121,7 @@ h1 {
 }
 
 .card {
-  min-height: 150px;
+  min-height: 178px;
   padding: 22px;
   border: 1px solid rgba(24, 33, 47, 0.12);
   border-radius: 8px;
@@ -121,9 +134,11 @@ h1 {
 }
 
 .card p,
-.contact p {
+.profile p,
+.contact p,
+.method-item p {
   margin: 0;
-  color: #566170;
+  color: #56616d;
   line-height: 1.7;
 }
 
@@ -132,8 +147,51 @@ h1 {
   margin-top: 8px;
 }
 
+.split {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.4fr);
+  gap: 28px;
+  align-items: start;
+  border-top: 1px solid rgba(24, 33, 47, 0.12);
+}
+
+.method-list {
+  display: grid;
+  gap: 14px;
+}
+
+.method-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(24, 33, 47, 0.12);
+}
+
+.method-item span {
+  color: #22695b;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.profile {
+  max-width: 860px;
+}
+
+.profile h2 {
+  margin-bottom: 16px;
+}
+
 .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
   border-top: 1px solid rgba(24, 33, 47, 0.14);
+}
+
+.contact-box {
+  min-width: min(420px, 100%);
 }
 
 @media (max-width: 760px) {
@@ -153,5 +211,15 @@ h1 {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .split,
+  .contact {
+    display: block;
+  }
+
+  .method-list,
+  .contact-box {
+    margin-top: 22px;
   }
 }
