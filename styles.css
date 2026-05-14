@@ -1,0 +1,157 @@
+:root {
+  color: #18212f;
+  background: #f6f4ef;
+  font-family:
+    "Microsoft YaHei",
+    "PingFang SC",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(30, 94, 84, 0.12), transparent 36%),
+    linear-gradient(315deg, rgba(184, 83, 52, 0.14), transparent 34%),
+    #f6f4ef;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  width: min(1080px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+.hero {
+  min-height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0 64px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: #2a7569;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(42px, 8vw, 86px);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.intro {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: #4d5663;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary {
+  color: #fff;
+  background: #1e5e54;
+}
+
+.secondary {
+  color: #1e5e54;
+  border: 1px solid rgba(30, 94, 84, 0.34);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid rgba(24, 33, 47, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.card p,
+.contact p {
+  margin: 0;
+  color: #566170;
+  line-height: 1.7;
+}
+
+.card p + p,
+.contact p + p {
+  margin-top: 8px;
+}
+
+.contact {
+  border-top: 1px solid rgba(24, 33, 47, 0.14);
+}
+
+@media (max-width: 760px) {
+  .page {
+    width: min(100% - 28px, 1080px);
+    padding: 36px 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 38px 0 48px;
+  }
+
+  .intro {
+    font-size: 17px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
