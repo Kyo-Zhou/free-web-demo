@@ -3,66 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>周小瑜 | 保险产品测评与研究</title>
+    <title>周小瑜 | 保险产品测评与配置研究</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page">
       <section class="hero">
-        <p class="eyebrow">金口碑保险产品测评负责人 · 复旦保险团队</p>
-        <h1>用清晰、可比较的研究方法，读懂保险产品的真实价值。</h1>
-        <p class="intro">
-          我关注健康险、养老年金、终身寿险等保险产品的条款结构、保障责任、
-          定价逻辑和适配场景，致力于把复杂的保险信息转化为普通用户也能理解的产品测评。
-        </p>
-        <div class="actions">
-          <a class="button primary" href="#value">我能提供的价值</a>
-          <a class="button secondary" href="#contact">联系我</a>
+        <div class="hero-copy">
+          <p class="eyebrow">金口碑保险产品测评负责人 · 复旦保险团队</p>
+          <h1>我是周小瑜，帮助个人和机构看懂保险产品、配置逻辑与市场趋势。</h1>
+          <p class="intro">
+            我长期关注健康险、养老年金、终身寿险等产品，擅长把条款责任、费用结构、
+            利益演示和适配场景转化为清晰、可比较、能落到决策的问题清单。
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#services">看看能聊什么</a>
+            <a class="button secondary" href="#contact">联系交流</a>
+          </div>
         </div>
+
+        <aside class="portrait-panel" aria-label="个人头像与身份信息">
+          <div class="portrait">
+            <img
+              src="./avatar.jpg"
+              alt="周小瑜头像"
+              onerror="this.style.display='none'; this.parentElement.classList.add('portrait-fallback')"
+            />
+            <span>周小瑜</span>
+          </div>
+          <div class="identity">
+            <strong>保险产品测评 / 配置研究 / 市场观察</strong>
+            <p>面向个人用户、研究机构与保险从业者，提供基于产品逻辑和用户场景的交流支持。</p>
+          </div>
+        </aside>
       </section>
 
-      <section id="value" class="section">
+      <section id="services" class="section">
         <div class="section-header">
-          <p class="label">For Visitors</p>
+          <p class="label">Services</p>
           <h2>我能提供的价值</h2>
         </div>
-        <div class="grid value-grid">
-          <article class="card">
-            <h3>个人保险配置咨询</h3>
-            <p>结合家庭结构、预算、健康状况和人生阶段，帮助用户理解保障缺口，避开不必要或不适配的产品。</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <p class="audience">个人用户</p>
+            <h3>保险配置咨询</h3>
+            <p>
+              适合正在考虑医疗险、重疾险、寿险、年金险，或想梳理已有保单的人。
+              可以一起看保障缺口、预算边界、产品取舍和购买顺序。
+            </p>
           </article>
-          <article class="card">
-            <h3>机构课题与研究交流</h3>
-            <p>围绕商业健康险、养老金融、互联网保险、产品创新和用户需求，支持课题讨论、资料梳理和研究共创。</p>
+
+          <article class="service-card">
+            <p class="audience">机构 / 课题组</p>
+            <h3>课题研究与行业交流</h3>
+            <p>
+              围绕商业健康险、养老金融、互联网保险、产品创新和用户需求，
+              支持研究选题讨论、资料梳理、访谈交流和报告共创。
+            </p>
           </article>
-          <article class="card">
-            <h3>保险从业人员探讨</h3>
-            <p>与代理人、经纪人、产品经理和内容从业者交流产品逻辑、测评标准、客户沟通和市场观察。</p>
-          </article>
-          <article class="card">
-            <h3>产品测评与内容合作</h3>
-            <p>把复杂条款、利益演示和产品差异转化为清晰内容，适合公众号、报告、课程和产品说明材料。</p>
+
+          <article class="service-card">
+            <p class="audience">保险从业者</p>
+            <h3>产品逻辑与内容方法探讨</h3>
+            <p>
+              可与代理人、经纪人、产品经理和内容从业者交流产品测评标准、
+              客户沟通方式、内容表达和市场观察。
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="section profile">
+      <section class="section evidence">
+        <div>
+          <p class="label">Topics</p>
+          <h2>近期关注</h2>
+        </div>
+        <div class="topic-list">
+          <p>健康险责任差异、续保条件和理赔触发点</p>
+          <p>养老年金与增额终身寿的长期资金安排</p>
+          <p>互联网保险产品的获客逻辑和内容表达</p>
+          <p>DRG / DIP 支付改革对商业健康险的影响</p>
+        </div>
+      </section>
+
+      <section class="section about">
         <p class="label">About</p>
         <h2>关于我</h2>
         <p>
           我是周小瑜，金口碑保险产品测评负责人，属于复旦保险团队。
-          目前主要做保险产品研究、条款拆解、市场分析和内容测评，希望用更透明的标准帮助用户理解保险。
+          目前主要做保险产品研究、市场分析和内容测评，希望用更透明的标准帮助用户理解保险，
+          也希望和关注保险行业的人持续交流。
         </p>
       </section>
 
       <section id="contact" class="section contact">
         <div>
           <p class="label">Contact</p>
-          <h2>联系我</h2>
+          <h2>联系交流</h2>
         </div>
         <div class="contact-box">
           <p>邮箱：2064023431@qq.com</p>
           <p>GitHub：Kyo-Zhou</p>
+          <p class="note">咨询或交流时，建议简单说明你的身份、关注的问题和希望获得的帮助。</p>
+          <p class="disclaimer">
+            本页面内容用于保险知识交流与研究讨论，不替代正式投保建议、保险合同解释或法律意见。
+          </p>
         </div>
       </section>
     </main>
