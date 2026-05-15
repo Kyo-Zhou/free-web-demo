@@ -88,6 +88,10 @@ h1 {
   line-height: 1.75;
 }
 
+.about-intro {
+  max-width: 700px;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +211,6 @@ h1 {
 }
 
 .service-card p,
-.about p,
 .contact p,
 .topic-list p {
   color: #56616d;
@@ -234,14 +237,6 @@ h1 {
   margin: 0;
   padding: 16px 0;
   border-bottom: 1px solid rgba(23, 32, 42, 0.12);
-}
-
-.about {
-  max-width: 880px;
-}
-
-.about p {
-  margin: 16px 0 0;
 }
 
 .contact {
