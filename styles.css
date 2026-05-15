@@ -33,12 +33,12 @@ a {
 }
 
 .hero {
-  min-height: 72vh;
+  min-height: 58vh;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
   gap: 44px;
   align-items: center;
-  padding: 44px 0 70px;
+  padding: 34px 0 54px;
 }
 
 .hero-copy {
@@ -197,7 +197,7 @@ h1 {
 }
 
 .service-card {
-  min-height: 260px;
+  min-height: 300px;
   padding: 24px;
   border: 1px solid rgba(23, 32, 42, 0.12);
   border-radius: 8px;
@@ -219,6 +219,14 @@ h1 {
 
 .service-card p {
   margin: 0;
+}
+
+.deliverable {
+  margin-top: 16px !important;
+  padding-top: 14px;
+  border-top: 1px solid rgba(23, 32, 42, 0.12);
+  color: #31443f !important;
+  font-weight: 700;
 }
 
 .evidence {
@@ -292,7 +300,7 @@ h1 {
 
   .hero {
     min-height: auto;
-    padding: 34px 0 52px;
+    padding: 26px 0 42px;
   }
 
   .intro {
