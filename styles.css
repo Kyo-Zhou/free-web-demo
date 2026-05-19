@@ -190,6 +190,53 @@ h1 {
   line-height: 1.25;
 }
 
+.profile-section {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.profile-list article {
+  padding: 22px 0;
+  border-top: 3px solid rgba(34, 105, 91, 0.36);
+}
+
+.profile-list.compact article {
+  border-top-color: rgba(160, 82, 54, 0.34);
+}
+
+.profile-list h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.profile-list p,
+.dream-copy p {
+  margin: 0;
+  color: #56616d;
+  line-height: 1.8;
+}
+
+.dream-copy {
+  max-width: 760px;
+}
+
+.dream-copy p + p {
+  margin-top: 16px;
+}
+
+.dream-section {
+  border-top-color: rgba(160, 82, 54, 0.24);
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -276,17 +323,21 @@ h1 {
 
 @media (max-width: 880px) {
   .hero,
+  .profile-section,
   .evidence,
   .contact {
     display: block;
   }
 
   .portrait-panel,
+  .profile-list,
+  .dream-copy,
   .topic-list,
   .contact-box {
     margin-top: 28px;
   }
 
+  .profile-list,
   .service-grid {
     grid-template-columns: 1fr;
   }
